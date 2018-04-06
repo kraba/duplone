@@ -1,0 +1,17 @@
+{
+  "my-host-desired-name":
+    {
+      "my-service-name" : {
+        "dest_type": "put here your destination: hubic, gdrive or sftp",
+        "dest_path": "destination path of hubic, gdrive or sftp",
+        "bck_path" : "source path of backup",
+        "encryptkey": "your encrypted key",
+        "passphrase" : "your key passphrase",
+        "exclude_dir" : "do you exclude a directory from backup?",
+        "using_rclone" : "yes or not or empty",
+	      "retention_days" : "day of retention in M(months), D(days) or Y(year)",
+	      "retention_full" : "how many full backup to save",
+	      "only_sftp_string" : "user@host:port if you use sftp, otherwise empty"
+        }
+	}
+}

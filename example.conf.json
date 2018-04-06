@@ -1,0 +1,29 @@
+{
+  "myworkstation":
+    {
+      "homedir" : {
+        "dest_type": "hubic",
+        "dest_path": "/default/my-homedir",
+        "bck_path" : "/home/name",
+        "encryptkey": "ABC123C4",
+        "passphrase" : "myp4ssphr4s3",
+        "exclude_dir" : "/home/name/tmp /home/name/var",
+        "using_rclone" : "yes",
+  	    "retention_days" : "1M",
+	      "retention_full" : "1",
+	      "only_sftp_string" : ""
+    },
+      "vardir" : {
+        "dest_type": "gdrive",
+        "dest_path": "/bck-vardir",
+        "bck_path" : "/var",
+        "encryptkey": "ABC123C4",
+        "passphrase" : "myp4ssphr4s3",
+        "exclude_dir" : "/var/log /var/mail",
+        "using_rclone" : "yes",
+	      "retention_days" : "3M",
+	      "retention_full" : "2",
+	      "only_sftp_string" : ""
+        }
+    }
+}
