@@ -84,40 +84,62 @@ At the moment only five options are available:
  - **Full backup - create first backup** : `./duplone.py bck-full host service`, using the previously example:
 
    `./duplone.py bck-full myworkstation homedir`
+
    `./duplone.py bck-full myworkstation vardir`
 
    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
-   
+
    `./duplone.py bck-full myworkstation all`
+
    If you launch it, a new full backup will be created on destination cloud storage.
 
  - **Incremental backup** : `./duplone.py bck-incr host service`, using the previously example:
+
    `./duplone.py bck-incr myworkstation homedir`
+
    `./duplone.py bck-incr myworkstation vardir`
+
    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+
    `./duplone.py bck-incr myworkstation all`
+
    If you launch it, a new incremental backup will be created (and attach to the last full backup) on destination cloud storage.
 
  - **Status / Collection status of backups** : `./duplone.py status host service`, using the previously example:
+
    `./duplone.py status myworkstation homedir`
+
    `./duplone.py status myworkstation vardir`
+
    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+
    `./duplone.py status myworkstation all`
+
  If you launch it, the collection status of backup will be written/reported to log file.
 
  - **Delete all full backups+incremental with retention flag** : `./duplone.py del-ret host service`, using the previously example:
+
    `./duplone.py del-ret myworkstation homedir`
+
    `./duplone.py del-ret myworkstation vardir`
+
    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+
    `./duplone.py del-ret myworkstation all`
+
    If you launch it, all full backups (and incremental files attached) older than retention (1D, 1M, 1Y....) will be deleted. If you've only one full backup nothing will be delete.
 
   - **Delete all full backups+incremental except a number in retention flag** : `./duplone.py del-all host service`, using the previously example:
-`./duplone.py del-all myworkstation homedir`
-   `./duplone.py del-all myworkstation vardir`
-      or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
-       `./duplone.py del-all myworkstation all`
-       If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
+
+  `./duplone.py del-all myworkstation homedir`
+
+  `./duplone.py del-all myworkstation vardir`
+
+  or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+
+   `./duplone.py del-all myworkstation all`
+
+   If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
 
 ### Logging
 Duplone have is log file, `duplone.log` . It contains all info and errors information, if you need to debug the script please change the `setLevel`of logger:
