@@ -82,9 +82,12 @@ Remember to save the `conf.json` file in the same directory of `duplone.py`.
 At the moment only five options are available:
 
  - **Full backup - create first backup** : `./duplone.py bck-full host service`, using the previously example:
+
    `./duplone.py bck-full myworkstation homedir`
    `./duplone.py bck-full myworkstation vardir`
+
    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+   
    `./duplone.py bck-full myworkstation all`
    If you launch it, a new full backup will be created on destination cloud storage.
 
