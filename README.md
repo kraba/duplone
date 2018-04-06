@@ -3,7 +3,9 @@
 ## Few words about duplicity & rclone
 
 [duplicity](http://duplicity.nongnu.org/) *backs directories by producing encrypted tar-format volumes and uploading them to a remote or local file server.* It's a very good tool to produce backup! Nothing else.
+
 [rclone](https://github.com/ncw/rclone) *is a command line program to sync files and directories to and from* cloud & non-cloud (storage) providers.
+
 [duplicity-rclone](https://github.com/GilGalaad/duplicity-rclone) is a duplicity backend to using rclone, written by [Francesco Magno](https://github.com/GilGalaad).
 
 ## What's is duplone?
@@ -200,7 +202,9 @@ Duplone check if duplicty and rclone are present, if GPG key is available and se
 ## Author, version & license
 
 Duplone was written by Matteo Basso during April 2018.
+
 Code review/help by [Giuseppe Biolo](https://github.com/gbiolo)
+
 Current version is : **0.1**
 
     Copyright (C) 2018 Matteo Basso
