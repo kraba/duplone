@@ -115,7 +115,7 @@ At the moment only five options are available:
 
    `./duplone.py status myworkstation all`
 
- If you launch it, the collection status of backup will be written/reported to log file.
+   If you launch it, the collection status of backup will be written/reported to log file.
 
  - **Delete all full backups+incremental with retention flag** : `./duplone.py del-ret host service`, using the previously example:
 
@@ -131,15 +131,15 @@ At the moment only five options are available:
 
   - **Delete all full backups+incremental except a number in retention flag** : `./duplone.py del-all host service`, using the previously example:
 
-  `./duplone.py del-all myworkstation homedir`
+    `./duplone.py del-all myworkstation homedir`
 
-  `./duplone.py del-all myworkstation vardir`
+    `./duplone.py del-all myworkstation vardir`
 
-  or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+    or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
 
-   `./duplone.py del-all myworkstation all`
+     `./duplone.py del-all myworkstation all`
 
-   If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
+     If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
 
 ### Logging
 Duplone have is log file, `duplone.log` . It contains all info and errors information, if you need to debug the script please change the `setLevel`of logger:
