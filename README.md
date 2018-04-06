@@ -110,11 +110,11 @@ At the moment only five options are available:
    If you launch it, all full backups (and incremental files attached) older than retention (1D, 1M, 1Y....) will be deleted. If you've only one full backup nothing will be delete.
 
   - **Delete all full backups+incremental except a number in retention flag** : `./duplone.py del-all host service`, using the previously example:
-   `./duplone.py del-all myworkstation homedir`
+`./duplone.py del-all myworkstation homedir`
    `./duplone.py del-all myworkstation vardir`
-   or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
-   `./duplone.py del-all myworkstation all`
-   If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
+      or launch script with `all` option as third argument and it execute all configured key presents on `conf.json`:
+       `./duplone.py del-all myworkstation all`
+       If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
 
 ### Logging
 Duplone have is log file, `duplone.log` . It contains all info and errors information, if you need to debug the script please change the `setLevel`of logger:
@@ -153,8 +153,6 @@ An example of `duplone.log` is :
     TotalDestinationSizeChange 41126565 (39.2 MB)
     Errors 0
     -------------------------------------------------
-
-
     2018-04-06 15:09:59,474|INFO --> Passphrase unsetted in environment
     2018-04-06 15:09:59,478|INFO -->
     ********************************************************************************
