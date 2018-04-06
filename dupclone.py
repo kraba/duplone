@@ -83,11 +83,12 @@ def jsonToDict(jsonfile):
 
 def binExists(executable):
     """Check if binary is present/installed on system."""
-    process = subprocess.Popen(["which", executable], stdout=subprocess.PIPE)
-    path = process.communicate()[0].rstrip()
-    if path:
-        logger.debug('Binary %s present' % path)
-        return True, path
+    for path in re.split(":", os.environ["PATH"]):
+        path = os.path.join(path, executable)
+        if os.path.isfile(path) and os.access(path, os.X_OK):
+            logger.debug('Binary %s present' % path)
+            return True, path
+    return False, None
 
 
 def setPass(passphrase, token):

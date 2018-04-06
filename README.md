@@ -29,16 +29,16 @@ The JSON configuration file is like the one below, description of key/value trou
   "my-host-desired-name":
     {
       "my-service-name" : {
-        "dest_type": "put here your destination: hubic, gdrive or sftp",
-        "dest_path": "destination path of hubic, gdrive or sftp",
-        "bck_path" : "source path of backup",
-        "encryptkey": "your encrypted key",
-        "passphrase" : "your key passphrase",
-        "exclude_dir" : "do you exclude a directory from backup?",
-        "using_rclone" : "yes or not or empty",
-	    "retention_days" : "day of retention in M(months) D(days) or Y(year)",
-	    "retention_full" : "how many full backup to save",
-	    "only_sftp_string" : "user@host:port if you use sftp, otherwise empty"
+      "dest_type": "put here your destination: hubic, gdrive or sftp",
+      "dest_path": "destination path of hubic, gdrive or sftp",
+      "bck_path" : "source path of backup",
+      "encryptkey": "your encrypted key",
+      "passphrase" : "your key passphrase",
+      "exclude_dir" : "do you exclude a directory from backup?",
+      "using_rclone" : "yes or not or empty",
+      "retention_days" : "day of retention in M(months) D(days) or Y(year)",
+      "retention_full" : "how many full backup to save",
+      "only_sftp_string" : "user@host:port if you use sftp, otherwise empty"
         }
 	}
 }
@@ -59,9 +59,9 @@ A simple example of JSON configuration file is below. We want from our workstati
         "passphrase" : "myp4ssphr4s3",
         "exclude_dir" : "/home/name/tmp /home/name/var",
         "using_rclone" : "yes",
-  	    "retention_days" : "1M",
-  	    "retention_full" : "1",
-  	    "only_sftp_string" : ""
+        "retention_days" : "1M",
+        "retention_full" : "1",
+        "only_sftp_string" : ""
       },
       "vardir" : {
         "dest_type": "gdrive",
@@ -71,9 +71,9 @@ A simple example of JSON configuration file is below. We want from our workstati
         "passphrase" : "myp4ssphr4s3",
         "exclude_dir" : "/var/log /var/mail",
         "using_rclone" : "yes",
-  	    "retention_days" : "3M",
-  	    "retention_full" : "2",
-  	    "only_sftp_string" : ""
+        "retention_days" : "3M",
+        "retention_full" : "2",
+        "only_sftp_string" : ""
         }
     }
 }
