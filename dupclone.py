@@ -139,9 +139,9 @@ def setCommand(command, origin, destination):
             if encryptkey == public_key[key]['keyid'][8:]:
                 logger.debug("Key %s found! GPG ready!" % encryptkey)
                 token = 1
-            if not token:
-                logger.error("Key %s not found" % encryptkey)
-                exit()
+        if not token:
+            logger.error("Key %s not found" % encryptkey)
+            exit()
     else:
             logger.error("Keyring %s not found" % encryptkey)
             exit()
