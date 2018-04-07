@@ -40,7 +40,7 @@ The JSON configuration file is like the one below, description of key/value trou
       "retention_full" : "how many full backup to save",
       "only_sftp_string" : "user@host:port if you use sftp, otherwise empty"
         }
-	}
+    }
 }
 ```
 A simple example of JSON configuration file is below. We want from our workstation to create a backup of:
