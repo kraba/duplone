@@ -144,7 +144,7 @@ At the moment only five options are available:
      If you launch it, all full backups (and incremental files attached) older than the last flagged (1,2 ...N) in conf.son will be deleted.
 
 ### Logging
-Duplone have is log file, `duplone.log` . It contains all info and errors information, if you need to debug the script please change the `setLevel`of logger:
+Duplone have its log file, `duplone.log` . It contains all info and errors information, if you need to debug the script please change the `setLevel`of logger:
 ```python
 logger.setLevel(logging.DEBUG)
 ```
